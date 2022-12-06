@@ -7,11 +7,13 @@
     <title>Show Date Time</title>
     <script>
        function showTime(){
-            alert(new Date())  // Display system date and time 
+            var today = document.getElementById("today")
+            today.innerHTML = new Date()
        }
     </script>
 </head>
 <body>
+    <h1 id="today"></h1>
     <button onclick="showTime()">Show Date and Time</button>
 </body>
 </html>
