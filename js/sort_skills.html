@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+</head>
+
+<body>
+    <h1>Skills</h1>
+    Skill <input type="text" id="skillname">
+    <button onclick="addSkill()">Add Skill</button>
+    <ul id="skills">
+
+    </ul>
+
+    <script>
+        var skills = []
+        var txtskill = document.getElementById("skillname")
+        var ul_skills = document.getElementById("skills")
+
+        function addSkill() {
+            skills.push(txtskill.value)
+            showSkills()
+        }
+
+        function showSkills() {
+            skills.sort() 
+            output = ""
+            for (var s of skills) {
+                output += `<li>${s}</li>`
+            }
+            ul_skills.innerHTML = output
+        }
+    </script>
+
+</body>
+
+</html>

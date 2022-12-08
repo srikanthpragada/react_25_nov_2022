@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        td {
+            text-align:right;
+        }
+    </style>
+    <script>
+        function showTable() {
+           var txtnum = document.getElementById("num")
+           var num = parseInt(txtnum.value);
+           var output = "";
+           for(let i =1; i <= 10; i ++)
+           { 
+               output = output + `<tr><td>${num}</td><td>${i}</td><td>${num * i}</td></tr>`
+           }
+           var tablebody = document.getElementById("tablebody")
+           tablebody.innerHTML = output;
+
+           var table = document.getElementById("table")
+           table.style.visibility = 'visible';
+        }
+    </script>
+</head>
+<body>
+    <h1>Table</h1>
+    Enter number : <input type="number" id="num" />
+    <button onclick="showTable()">Table</button>
+    <p></p>
+    <table id="table" style="visibility:hidden" cellpadding="5px" border="1" >
+        <thead>
+            <tr>
+                <td>Number</td>
+                <td>Multiplier</td>
+                <td>Result</td>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
