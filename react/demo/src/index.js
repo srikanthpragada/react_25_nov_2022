@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ShowDateTime from './basics/ShowDateTime';
-import './index.css';
+import CourseList from './basics/CourseList';
  
+import './index.css';
+
 import reportWebVitals from './reportWebVitals';
+
+var courses = [{title : 'React', duration:12, fee:3000}, 
+               {title : 'Java SE', duration:36, fee:6000}]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-       <ShowDateTime />
+       <CourseList courses={courses} />
   </React.StrictMode>
 );
 

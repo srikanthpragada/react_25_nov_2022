@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Hello() {
-    var product = "React";
+export default function Hello(props) {
+  
     return (
         <>
-            <h1>Hello {product.toUpperCase()}</h1>
-            <h3>Wonderful library for UI</h3>
+            <h1>Hello {props.name}</h1>
+            <h2>Email : {props.email}</h2>
         </>
     )
 }
