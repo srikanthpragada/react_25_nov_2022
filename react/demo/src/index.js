@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import DiscountCalculator from './basics/DiscountCalculator';
- 
- 
 import './index.css';
-
 import reportWebVitals from './reportWebVitals';
+import CorrectCounter from './state/CorrectCounter';
 
 // var courses = [{title : 'React', duration:12, fee:3000}, 
 //                {title : 'Java SE', duration:36, fee:6000}]
@@ -13,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <DiscountCalculator />
+        <CorrectCounter />
   </React.StrictMode>
 );
 
