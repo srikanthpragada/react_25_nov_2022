@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import DigitalClock from './state/DigitalClock';
+import CounterClass from './state/CounterClass';
+ 
+
  
 
 // var courses = [{title : 'React', duration:12, fee:3000}, 
@@ -11,7 +13,7 @@ import DigitalClock from './state/DigitalClock';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <DigitalClock />
+        <CounterClass />
   </React.StrictMode>
 );
 
