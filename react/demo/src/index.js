@@ -2,10 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import CounterClass from './state/CounterClass';
- 
+import UncontrolledDemo from './state/UncontrolledDemo';
 
- 
 
 // var courses = [{title : 'React', duration:12, fee:3000}, 
 //                {title : 'Java SE', duration:36, fee:6000}]
@@ -13,7 +11,7 @@ import CounterClass from './state/CounterClass';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <CounterClass />
+        <UncontrolledDemo />
   </React.StrictMode>
 );
 
