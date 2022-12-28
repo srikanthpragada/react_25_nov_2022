@@ -21,7 +21,6 @@ export default function Names2() {
     )
 }
 
-
 function AddName({ names, addName }) {
     var [message, setMessage] = useState('')
     var [name, setName] = useState('')
@@ -43,7 +42,8 @@ function AddName({ names, addName }) {
         <>
             Name : <input type="text" id="txtName" value={name} 
                           onChange={updateName}/>
-            <button onClick={addNewName}>Add</button>
+            <button onClick={addNewName}
+                    disabled={name.length === 0}>Add</button>
             <span className="text-danger">{message}</span>
         </>
 

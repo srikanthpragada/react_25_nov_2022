@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import UncontrolledDemo from './state/UncontrolledDemo';
-
+import Cart from './state/Cart';
 
 // var courses = [{title : 'React', duration:12, fee:3000}, 
 //                {title : 'Java SE', duration:36, fee:6000}]
@@ -11,7 +10,7 @@ import UncontrolledDemo from './state/UncontrolledDemo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <UncontrolledDemo />
+        <Cart />
   </React.StrictMode>
 );
 
