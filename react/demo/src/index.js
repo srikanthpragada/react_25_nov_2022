@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import GitUserInfo from './ajax/GitUserInfo';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Cart from './state/Cart';
 
 // var courses = [{title : 'React', duration:12, fee:3000}, 
 //                {title : 'Java SE', duration:36, fee:6000}]
@@ -10,7 +10,7 @@ import Cart from './state/Cart';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-        <Cart />
+         <GitUserInfo />
   </React.StrictMode>
 );
 
