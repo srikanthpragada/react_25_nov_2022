@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import GitUserInfo from './ajax/GitUserInfo';
+import AddCourses from './ajax/AddCourse';
+import ListCourses from './ajax/ListCourses';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +11,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-         <GitUserInfo />
+         <AddCourses />
+         <p></p>
+         <ListCourses />
   </React.StrictMode>
 );
 
