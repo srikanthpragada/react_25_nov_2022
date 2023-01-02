@@ -5,7 +5,7 @@ import { BOOKS_URL } from './constants'
 export default function SearchBooks() {
     const [books, setBooks] = useState([])
     const [selectedBooks, setSelectedBooks] = useState([])
-    const [searchText, setSearchText] = useState()
+    const [searchText, setSearchText] = useState('')
     const [done, setDone] = useState(false)
 
     useEffect(function () {
@@ -26,7 +26,6 @@ export default function SearchBooks() {
     }
 
     function searchBooks() {
-        
         setSelectedBooks(books.filter((book) => book.title.includes(searchText)))
         setDone(true)
     }
